@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "dishdetail.component.scss"
+    ],
+    "names": [],
+    "file": "dishdetail.component.css"
+}
