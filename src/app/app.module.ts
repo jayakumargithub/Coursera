@@ -18,8 +18,13 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { MatDialogModule} from '@angular/material/dialog';
 import { DishService } from './services/dish.service';
+import { LoginComponent } from './login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import {FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ import { DishService } from './services/dish.service';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +47,17 @@ import { DishService } from './services/dish.service';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [DishService, PromotionService],
+  entryComponents: [
+    LoginComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
